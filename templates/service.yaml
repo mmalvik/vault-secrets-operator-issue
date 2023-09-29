@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "secrets-operator-issue.fullname" . }}
+  labels:
+    {{- include "secrets-operator-issue.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "secrets-operator-issue.selectorLabels" . | nindent 4 }}
