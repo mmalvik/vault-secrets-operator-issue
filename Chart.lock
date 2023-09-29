@@ -1,0 +1,9 @@
+dependencies:
+- name: vault
+  repository: https://helm.releases.hashicorp.com
+  version: 0.25.0
+- name: vault-secrets-operator
+  repository: https://helm.releases.hashicorp.com
+  version: 0.1.0
+digest: sha256:7aedb25238920bd5214415b72b143a12c890005ddbf2c34d659c6d095200eaed
+generated: "2023-09-29T15:37:58.018485+02:00"
