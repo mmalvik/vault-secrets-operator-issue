@@ -30,4 +30,7 @@ Now try to run template command again:
 helm template .
 ```
 
-Fails with error message.
+Fails with error message:
+```shell
+Error: template: secrets-operator-issue/charts/vault/templates/tests/server-test.yaml:17:6: executing "secrets-operator-issue/charts/vault/templates/tests/server-test.yaml" at <include "imagePullSecrets" .>: error calling include: template: secrets-operator-issue/charts/vault-secrets-operator/templates/_helpers.tpl:140:15: executing "imagePullSecrets" at <.Values.controller.imagePullSecrets>: nil pointer evaluating interface {}.imagePullSecrets
+```
