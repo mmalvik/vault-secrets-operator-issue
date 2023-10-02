@@ -8,7 +8,7 @@ helm template .
 
 This works fine.
 
-Now update to vault-secrets-operator to `0.3.1` in `Chart.yaml`:
+Now update to vault-secrets-operator from `0.1.0` to `0.3.1` in `Chart.yaml`:
 
 ```yaml
 dependencies:
